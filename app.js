@@ -183,4 +183,125 @@ document.write(`${((maxage - myage) * 365) * 150}`);
 
 
 
+//       Chapter 6 to 9
+
+// Question 1. Write a program to take a number in a variable, do the
+// required arithmetic to display the following result in your browser:
+
+
+document.write("<h1> Question  No 1 </h1>");
+
+document.write("<h2> Result </h2>");
+
+var mathNumber = 10;
+
+document.write(`<h3>Value of a is ${mathNumber}</br>....................... </h3>`)
+
+document.write(`<h3>The value of ++a is ${++mathNumber} </br> Now the velue of a is 11</h3>`);
+
+document.write(`<h3>The value of a++ is ${mathNumber++} </br> Now the velue of a is 12</h3`)
+
+document.write(`</br> <h3>The value of --a is ${--mathNumber} </br> Now the velue of a is 11</h3`)
+
+document.write(`</br> <h3>The value of a-- is ${mathNumber--} </br> Now the velue of a is 10</h3`)
+
+// Question No 2
+
+document.write(" </br><h1> Question No 2  </h1>")
+
+var a = 2;
+var b = 1;
+var result = --a - --b + ++b + b--;
+
+document.write(`<h3>--a = 1  <br> --a - --b = 1 <br> --a - --b + ++b = 2 <br> --a - --b + ++b + b-- = 3</h3>`);
+
+
+// Question No 3
+
+var greeting = ("hello");
+var userName = prompt("Enter your Name", "Name");
+
+console.log(greeting + " " + userName);
+
+
+// Question No 5
+
+document.write("<h1> Question No 5");
+
+
+var yourFirstNumber = prompt("Enter first Number", "5");
+
+document.write(`<h3>Your number multiply by 2 is : ${yourFirstNumber* 2}  </h3>`);
+
+// Question No 6
+
+document.write("<h1> Question No 6 </h1>");
+
+document.write(`<h3> Subject &nbsp Total Marks &nbsp Obtain Marks &nbsp Percentage`)
+
+var subjectEnghlish = ("Enghlish");
+
+var subjectMath = ("Math");
+
+var subjectUrdu = ("Urdu");
+
+var totalMarks = 100;
+
+var obtainEnghlishMarks = 54;
+
+var obtainUrduMarks = 48;
+
+document.write(`<h4> ${subjectEnghlish} &nbsp&nbsp&nbsp &nbsp &nbsp${totalMarks}
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp${obtainEnghlishMarks}
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+ ${obtainEnghlishMarks*totalMarks/100}% </h4>`);
+
+ document.write(`<h4> ${subjectMath}&nbsp &nbsp &nbsp &nbsp&nbsp&nbsp &nbsp &nbsp${totalMarks}
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp${obtainEnghlishMarks}
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ${obtainEnghlishMarks*totalMarks/100}%</h4>`);
+
+
+document.write(`<h4> ${subjectUrdu} &nbsp &nbsp &nbsp &nbsp&nbsp&nbsp &nbsp &nbsp${totalMarks}
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp${obtainEnghlishMarks}
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ${obtainUrduMarks*totalMarks/100}%</h4>`);
+
+
+//       Chapter 9 to 11
+
+// Question No 1
+
+
+document.write(`<h1>Chapter No 9 to 11</h1>`);
+
+document.write(`<h2>Question No 1</h2>`);
+
+var city =prompt("Enter your city");
+
+if (city === "karachi"){
+    console.log("welcome to city of lights")
+}
+
+// Question No 2
+
+var gender = prompt("Enter your gender");
+
+if (gender === "male"){
+    console.log("Good Morning Sir.")
+}
+else if (gender === "female") {
+    console.log(" Good morning Ma'am. ")
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
