@@ -237,8 +237,6 @@ document.write(`<h3>Your number multiply by 2 is : ${yourFirstNumber* 2}  </h3>`
 
 document.write("<h1> Question No 6 </h1>");
 
-document.write(`<h3> Subject &nbsp Total Marks &nbsp Obtain Marks &nbsp Percentage`)
-
 var subjectEnghlish = ("Enghlish");
 
 var subjectMath = ("Math");
@@ -251,20 +249,34 @@ var obtainEnghlishMarks = 54;
 
 var obtainUrduMarks = 48;
 
-document.write(`<h4> ${subjectEnghlish} &nbsp&nbsp&nbsp &nbsp &nbsp${totalMarks}
-&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp${obtainEnghlishMarks}
-&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
- ${obtainEnghlishMarks*totalMarks/100}% </h4>`);
-
- document.write(`<h4> ${subjectMath}&nbsp &nbsp &nbsp &nbsp&nbsp&nbsp &nbsp &nbsp${totalMarks}
-&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp${obtainEnghlishMarks}
-&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ${obtainEnghlishMarks*totalMarks/100}%</h4>`);
-
-
-document.write(`<h4> ${subjectUrdu} &nbsp &nbsp &nbsp &nbsp&nbsp&nbsp &nbsp &nbsp${totalMarks}
-&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp${obtainEnghlishMarks}
-&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ${obtainUrduMarks*totalMarks/100}%</h4>`);
-
+document.write(
+    `<tabel> 
+<tr> 
+<th> <b>Subject</b> </th>
+<th><b> Total Marks</b> </th>
+<th><b>Obtain Mark</b> </th>
+<th><b> Percentage</b> </th>
+ </tr>
+ <tr> <br>
+<td>Enghlish </td>
+<td> ${totalMarks} </td>
+<td>${obtainEnghlishMarks} </td>
+<td>${obtainEnghlishMarks*totalMarks/100}% </td>
+ </tr>
+ <tr> <br><br>
+<td>${subjectMath} </td>
+<td> ${totalMarks} </td>
+<td>${obtainEnghlishMarks} </td>
+<td>${obtainEnghlishMarks*totalMarks/100}% </td>
+ </tr>
+ <br><br>
+ <td>${subjectUrdu} </td>
+ <td> ${totalMarks} </td>
+ <td>${obtainUrduMarks} </td>
+ <td>${obtainUrduMarks*totalMarks/100}% </td>
+  </tr>
+ 
+</tabel> `)
 
 //       Chapter 9 to 11
 
@@ -290,6 +302,107 @@ if (gender === "male"){
 }
 else if (gender === "female") {
     console.log(" Good morning Ma'am. ")
+}
+
+
+// Question No 3
+
+document.write(`<h1>Questin No 3</h1>`)
+
+var color = prompt("Enter your color")
+
+if (color === "red" ){
+    document.write("Must stop")
+}
+else if(color === "yellow"){
+   document.write(" Redy to move")
+}
+else if (color === "green"){
+  document.write("  Move now")
+}
+else{
+   document.write(" please enter right color")
+}
+
+
+// Question No 4
+
+document.write(`<h1>Questin No 4</h1>`)
+
+var fuel = prompt("Enter your remaining fuel")
+
+if (fuel === "0.25 litres" ){
+    document.write("“Please refill the fuel in your car”")
+}
+else{
+   document.write(" You can carry on");
+}
+
+
+// Question No 5
+
+document.write(`<h1>Questin No 5</h1>`)
+
+var a = 4;
+if(++a === 5){
+    alert("given condition for variable is true")
+}
+
+var b = 82;
+if(b++ === 83){
+    alert("given condition for variable is true")
+}
+
+var c = 12;
+if(c++ === 13){
+    alert("Condition 1 is true")
+}
+if(c === 13){
+    alert("Condition 2 is true")
+}
+if(++c === 14){
+    alert("Condition 3 is true")
+}
+if(c === 14){
+    alert("Condition 4 is true")
+}
+
+
+// Question No 6
+
+document.write(`<h1>Questin No 6</h1>`)
+
+var firstSubject = +prompt("Enter your first subjects obtain numbers");
+var secondSubject = +prompt("Enter your second subjects obtain numbers");
+var thirdSubject = +prompt("Enter your third subjects obtain numbers");
+var totalObatinNumber = (firstSubject + secondSubject + thirdSubject);
+var totalMarks1Subjects = +prompt("Enter total marks of first subject");
+var totalMarks2Subjects = +prompt("Enter total marks of second subject");
+var totalMarks3Subjects = +prompt("Enter total marks of third subject");
+var totalMarksOfAllSubject = (totalMarks1Subjects + totalMarks2Subjects + totalMarks3Subjects);
+
+var parcentage = ( totalObatinNumber * 100 /totalMarksOfAllSubject + "%");
+
+
+document.write(`<h1>Marks Sheet </h1>`);
+
+document.write("Total Marks :" +totalMarksOfAllSubject  + "<br>");
+
+document.write("Marks Obtain :" + totalObatinNumber + "<br>");
+
+document.write("Percentage :" + parcentage + "<br>");
+
+if ( parcentage >= "80%"){
+    document.write("Grade : A-One  <br> Remarks : Excellent ")
+}
+else if ( parcentage >= "70%"){
+    document.write("Grade : A  <br>  Remarks : Good" )
+}
+else if ( parcentage >= "60%"){
+    document.write("Grade : B  <br> Remarks : You need to improve")
+}
+else if ( parcentage < "60%"){
+    document.write("Grade : Fail <br> Remarks : Sorry")
 }
 
 
